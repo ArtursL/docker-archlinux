@@ -12,7 +12,7 @@ RUN [ "/tmp/tar", "--preserve-permissions", "--skip-old-files", "--strip-compone
 
 #Clean up
 RUN rm -v /tmp/*
-RUN rm archlinux-bootstrap-2015.03.01-x86_64.tar
+RUN rm archlinux-bootstrap-2015.04.01-x86_64.tar
 RUN rm README
 RUN echo "Server = http://mirror.rackspace.com/archlinux/\$repo/os/\$arch" >> /etc/pacman.d/mirrorlist
 

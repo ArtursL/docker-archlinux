@@ -6,9 +6,9 @@ ADD busybox /tmp/wget
 ADD tar /tmp/tar
 ADD gzip /tmp/gzip
 
-RUN [ "/tmp/wget", "http://mirrors.kernel.org/archlinux/iso/2015.03.01/archlinux-bootstrap-2015.03.01-x86_64.tar.gz" ]
-RUN [ "/tmp/gzip", "-d", "archlinux-bootstrap-2015.03.01-x86_64.tar.gz"]
-RUN [ "/tmp/tar", "--preserve-permissions", "--skip-old-files", "--strip-components=1", "-xf", "archlinux-bootstrap-2015.03.01-x86_64.tar" ]
+RUN [ "/tmp/wget", "http://mirrors.kernel.org/archlinux/iso/2015.04.01/archlinux-bootstrap-2015.04.01-x86_64.tar.gz" ]
+RUN [ "/tmp/gzip", "-d", "archlinux-bootstrap-2015.04.01-x86_64.tar.gz"]
+RUN [ "/tmp/tar", "--preserve-permissions", "--skip-old-files", "--strip-components=1", "-xf", "archlinux-bootstrap-2015.04.01-x86_64.tar" ]
 
 #Clean up
 RUN rm -v /tmp/*

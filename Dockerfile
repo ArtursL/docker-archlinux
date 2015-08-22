@@ -22,6 +22,6 @@ ENV container docker
 
 RUN pacman-key --init
 RUN pacman-key --populate archlinux
-RUN pacman -Syyu --noconfirm --needed --noprogressbar
+RUN pacman -Syyu --noconfirm --needed --noprogressbar base base-devel
 RUN pacman-db-upgrade
 RUN yes | pacman -Scc

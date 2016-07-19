@@ -1,7 +1,7 @@
 FROM scratch
 MAINTAINER "Arturs Liepins" <arturs@liepins.me>
 
-ENV ARCH_VERSION "2016.05.01"
+ENV ARCH_VERSION "2016.07.01"
 
 ADD busybox /tmp/wget
 ADD busybox /tmp/sh
